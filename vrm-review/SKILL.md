@@ -2,6 +2,7 @@
 name: vrm-review
 description: VRM/Live2D表情をPlaywrightスクショ→Copilot CLI→GPT-5.4で自動レビュー。Claude Opusトークン温存＋具体的な改善提案取得
 argument-hint: "[review-type] [url]  例: expression http://localhost:5173"
+license: MIT
 ---
 
 # vrm-review — AITuber表情の自動レビュー

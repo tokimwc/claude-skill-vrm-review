@@ -17,7 +17,13 @@ This Skill wraps that delegation into a 4-step pipeline so Claude Code doesn't b
 ## Quickstart
 
 ```bash
-git clone https://github.com/tokimwc/claude-skill-vrm-review.git ~/.claude/skills/vrm-review
+gh skill install tokimwc/claude-skill-vrm-review
+```
+
+Or with a specific version:
+
+```bash
+gh skill install tokimwc/claude-skill-vrm-review vrm-review@v1.0.0
 ```
 
 Then in Claude Code:
@@ -50,18 +56,19 @@ See [`templates/prompts.md`](templates/prompts.md) for the full prompt library.
 
 ```
 .
-├── SKILL.md              # Claude Code Skill definition
-├── scripts/
-│   └── review.sh         # Thin wrapper around `copilot -p`
-└── templates/
-    └── prompts.md        # Prompt templates for the 5 review types
+└── vrm-review/
+    ├── SKILL.md              # Claude Code Skill definition
+    ├── scripts/
+    │   └── review.sh         # Thin wrapper around `copilot -p`
+    └── templates/
+        └── prompts.md        # Prompt templates for the 5 review types
 ```
 
 ## Related
 
-- Companion article (Japanese): [_Claude Code から Copilot CLI + GPT-5.4 に画像レビューを委任する — AITuber VRM の表情を自動レビューする Skill_](https://zenn.dev/tokimwc) — published for [GitHub Copilot 活用選手権 2026 Spring](https://zenn.dev/contests/github-2026-spring)
+- Companion article (Japanese): [_Claude Code から Copilot CLI + GPT-5.4 に画像レビューを委任する — AITuber VRM の表情を自動レビューする Skill_](https://zenn.dev/toki_mwc/articles/claude-code-copilot-gpt54-vrm-review) — published for [GitHub Copilot 活用選手権 2026 Spring](https://zenn.dev/contests/github-2026-spring)
 - Inspiration: [soyukke / opencode + GPT-5.4 screenshot review skill](https://zenn.dev/soyukke/articles/opencode-gpt54-screenshot-review-skill)
-- GitHub Copilot CLI docs: <https://docs.github.com/en/copilot/github-copilot-cli>
+- GitHub Copilot CLI docs: <https://docs.github.com/en/copilot/github-copilot-in-the-cli>
 
 ## License
 
